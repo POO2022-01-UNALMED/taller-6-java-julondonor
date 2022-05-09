@@ -28,7 +28,7 @@ public class Pais {
 			freq.put(nombre, (cuantas == null) ? 1 : cuantas+1);
 			
 			if (((cuantas == null) ? 1 : cuantas+1) >maximo) {
-				maximo = cuantas+1;
+				maximo = (cuantas == null) ? 1 : cuantas+1;
 				ganador = pais;
 			}
 		}
